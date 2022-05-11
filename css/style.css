@@ -17,6 +17,7 @@
   --back-color-button: #188ce8;
   --border-color: #ececec;
   --border-portfolio: #eeeeee;
+  --color-icon: #afb1b8;
 }
 /*Основное для страницы*/
 html {
@@ -59,6 +60,7 @@ ul {
 .main .company-list,
 .task-list,
 .company-title,
+.clients-title,
 .gallery {
   list-style-type: none;
   margin: 0;
@@ -148,6 +150,7 @@ ul {
 .nav-contact .link:focus,
 .footer .link:hover {
   color: var(--hover-color);
+  fill: var(--hover-color);
 }
 
 /*Эффективные решения*/
@@ -275,9 +278,13 @@ ul {
 /*Нижний колонтитул*/
 .footer {
   background-color: var(--back-color-ef);
+}
+.adress {
   padding: 60px 0px;
 }
-
+.cont-footer {
+  display: flex;
+}
 .adr-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -288,6 +295,7 @@ ul {
 .footer .footer-adress {
   list-style-type: none;
   padding-top: 20px;
+  margin-right: 70px;
 }
 .footer .link {
   text-decoration: none;
@@ -379,4 +387,147 @@ ul {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.gallery-link {
+  display: inline-block;
+}
+.gallery-link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.overlay {
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/img_overlay.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-envelope,
+.contact-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+.feature-title-icon {
+  background-color: var(--button-back);
+  width: 270px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.company-social-list {
+  display: flex;
+  justify-content: center;
+}
+.company-link-social {
+  fill: var(--color-icon);
+}
+.company-social-list {
+  margin-top: 16px;
+}
+.company-link-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.company-link-social:hover,
+.company-link-social:focus {
+  background-color: var(--hover-color);
+  fill: var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--head-color);
+}
+
+.list-clients {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-clients:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-clients {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: var(--color-icon);
+}
+
+.link-clients:hover,
+.link-clients:focus {
+  border: 1px solid #2196f3;
+  fill: var(--hover-color);
+}
+
+.content {
+  padding-top: 72px;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--white-color);
+}
+
+.social-network-footer {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+.social-footer:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link-footer {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--hover-color);
+  fill: var(--white-color);
 }
